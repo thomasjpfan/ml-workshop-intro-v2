@@ -285,14 +285,14 @@ class: chapter-slide
 
 # Housing Dataset
 
-![:scale 100%](notebooks/images/housing.svg)
+![:scale 100%](notebooks/images/housing.png)
 
 ---
 
 # Feature Ranges
 
 
-![:scale 90%](notebooks/images/housing_box.svg)
+![:scale 70%](notebooks/images/housing_box.svg)
 
 ---
 
@@ -305,13 +305,13 @@ class: chapter-slide
 
 # KNN Scaling
 
-![:scale 90%](notebooks/images/knn-data.svg)
+![:scale 90%](images/knn-data.svg)
 
 ---
 
 # KNN Scaling Decision Boundary
 
-![:scale 90%](notebooks/images/knn-scaling.svg)
+![:scale 90%](images/knn-scaling.svg)
 
 ---
 
