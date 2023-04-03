@@ -19,6 +19,7 @@ git clone https://github.com/thomasjpfan/ml-workshop-intro-v2
 Please note that I may add and improve the material until shortly before the session. You can update your copy by running:
 
 ```bash
+cd ml-workshop-intro-v2
 git pull origin main
 ```
 
