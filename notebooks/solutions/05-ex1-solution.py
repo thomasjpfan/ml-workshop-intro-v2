@@ -1,21 +1,23 @@
-X, y = fetch_openml(data_id=1050, parser="pandas", as_frame=True, return_X_y=True)
+y
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, stratify=y, random_state=0)
+    X, y, stratify=y, random_state=0
+)
 
 log_reg = make_pipeline(
     StandardScaler(),
+    SelectPercentile(percentile=50),
     LogisticRegression(solver="liblinear", penalty="l1")
 )
 log_reg.set_output(transform="pandas")
 
-log_reg.fit(X_train, y_train);
+log_reg.fit(X_train, y_train)
 
 log_reg.score(X_test, y_test)
 
-coefs = log_reg[-1].coef_.flatten()
-feature_names_in = log_reg[-1].feature_names_in_
+feature_names = log_reg[-1].feature_names_in_
+coef_ = log_reg[-1].coef_.ravel()
 
-coefs_series = pd.Series(coefs, index=feature_names_in).sort_values()
+coef_series = pd.Series(coef_, index=feature_names).sort_values()
 
-coefs_series.plot.barh(figsize=(12, 8));
+coef_series.plot(kind="barh");

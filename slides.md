@@ -296,13 +296,6 @@ class: chapter-slide
 
 ---
 
-class: chapter-slide
-
-# Notebook 📕!
-## notebooks/02-preprocessing.ipynb
-
----
-
 # KNN Scaling
 
 ![:scale 90%](images/knn-data.svg)
@@ -312,6 +305,13 @@ class: chapter-slide
 # KNN Scaling Decision Boundary
 
 ![:scale 90%](images/knn-scaling.svg)
+
+---
+
+class: chapter-slide
+
+# Notebook 📕!
+## notebooks/02-preprocessing.ipynb
 
 ---
 
